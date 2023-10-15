@@ -1,0 +1,32 @@
+//-----------------------------------------------------------------------------------------------------------------------------------
+// @mixin - это про динамические значения, похоже на функцию. Миксин нужно обьявить и он тоже возвращает набор свойств
+// @mixin имя(не обязательные параметры) { свойства } 
+// @mixin в отличии от placeholder-а - можно настроить
+
+// @mixin bordered($color: black, $type: solid) { //значения по умолчанию black, solid
+//     border-top: 1px $type $color;
+//     border-bottom: 1px $type $color;
+// }
+
+// p {
+//     @include bordered(green, solid);
+// }
+
+// div {
+//     @include bordered($type: dashed); // передача в неправильном порядке, указываю имя параметра
+// }
+
+// Сделаем @mixin для центрирования flex-ми
+
+@mixin centeredflex($type: flex) {
+    display: $type;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin fontmain($fz:16px, $lh:1.2, $ls:0.02, $fw:700) {
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0.02;
+    font-weight: 700;
+}

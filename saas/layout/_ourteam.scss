@@ -1,0 +1,87 @@
+/* -------------------------------------------Our team----------------------------------------------- */
+.section-team {
+    background-color: var(--secondary-bg-color);
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .section-team .title {
+    color: var(--title-text-color);
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .member-card {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    
+    padding-bottom: 30px;
+    padding-top: 30px;  
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+  .team-list .title-member {
+    align-self: center;
+    color: var(--title-text-color);
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  .member-card .description {
+    align-self: center;
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+  .team-list .list-item {
+    flex-basis: calc((100% - 3 * 30px) / 4);  
+    background-color: #fff;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  }
+  
+  .team-list .list-item:not(:nth-child(4n-4)) {
+    margin-right: 30px;
+  }
+  .social-list {
+    display: flex;
+    justify-content: center;
+  }
+  .social-item:not(:last-child){
+    margin-right: 10px;
+  }
+  .social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+  
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .social-link:hover,
+  .social-link:focus{
+    cursor: pointer;
+    background-color: var(--accent-color);
+  }
+  
+  .social-icon {
+    width: 20px;
+    height: 20px;
+    fill: #AFB1B8;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .social-link:hover .social-icon,
+  .social-link:focus .social-icon {
+    fill:var(--white);
+  }
+  
+  
+  /* ---------------------------END of Our team -------------------------------------*/
